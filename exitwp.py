@@ -146,12 +146,12 @@ def parse_wp_xml(file):
             img_srcs = []
             if body is not None:
                 try:
-                    soup = BeautifulSoup(body, features="lxml")
+                    soup = BeautifulSoup(body, features="lxml", from_encoding=["utf-8"])
                     img_tags = soup.find_all('img')
                     for img in img_tags:
                         img_srcs.append(img['src'])
                 except:
-                    print 'could not parse html: ' + body
+                    print 'could not parse html: ' + body.encode('utf-8')
             # print img_srcs
 
             excerpt = gi('excerpt:encoded', empty=True)
