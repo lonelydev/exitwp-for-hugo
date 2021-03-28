@@ -30,6 +30,13 @@ Runtime dependencies
  * `PyYAML <http://pyyaml.org/wiki/PyYAML>`_ : Reading configuration files and writing YAML headers (python)
  * `Beautiful soup <http://www.crummy.com/software/BeautifulSoup/>`_ : Parsing and downloading of post images/attachments (python)
 
+Installing dependencies in Windows
+-----------------------------------
+
+Remember to download and install Python 2 from the `official website's download page <https://www.python.org/downloads/>`_ . This script hasn't been upgraded to work with python 3 just yet. 
+Then install all the dependencies running the following command, just to be sure it is running against python 2 version installed in your pc and not the python 3 version. 
+
+  ``py -2 -m pip install --upgrade -r pip_requirements``
 
 Installing dependencies in ubuntu/debian
 ----------------------------------------
